@@ -1,44 +1,57 @@
 # Skill Roadmap
 
-Additional workflow skills worth extracting from mature agentic delivery teams.
+The first public batch now includes the original three skills plus the nine operational guardrail skills that came out of repeated agentic delivery failures.
 
-## High-value next skills
+## Published skill set
 
-### production-promotion-gates
+### Core delivery
 
-For sandbox-to-production promotion. Covers source commit, build artefact, runtime surface, smoke checks, rollback, logs, and post-promotion proof.
+- `agentic-engineering`
+- `orchestrated-agentic-delivery`
+- `bulletproof-building-and-review`
 
-### visible-agent-work
+### Operational guardrails
 
-For platforms with hidden background workers. Requires visible run IDs, task records, streamed progress, final artefacts, and parent-thread summaries so users are not gaslit by invisible work.
+- `sandbox-to-production-gates`
+- `visible-agent-work`
+- `model-capability-proof`
+- `context-continuity-handoff`
+- `design-before-build-gate`
+- `dirty-worktree-discipline`
+- `security-intake-before-import`
+- `qa-to-engineering-brief`
+- `reviewer-fix-mode`
 
-### model-provider-capability-proof
+## Renames from the scratch roadmap
 
-For model swaps and provider claims. Separates model listing, account entitlement, context window, reasoning modes, tool use, streaming, media support, and actual runtime proof.
+| Scratch name | Published name | Why |
+|---|---|---|
+| `production-promotion-gates` | `sandbox-to-production-gates` | Names the actual transition and avoids vague release language. |
+| `model-provider-capability-proof` | `model-capability-proof` | Shorter, still covers provider and account proof inside the skill. |
+| `design-gate-before-build` | `design-before-build-gate` | Reads like a gate pattern rather than a process fragment. |
+| `qa-to-brief` | `qa-to-engineering-brief` | Makes the output concrete and builder-ready. |
 
-### context-continuity-handoff
+## Future extraction ideas
 
-For long sessions and context compaction. Requires human-readable handoffs, current state, decisions, active blockers, evidence, and what not to repeat.
+### agent-browser-verification
 
-### design-gate-before-build
+For product surfaces where tests pass but the browser can still fail. Covers real UI smoke, screenshots, auth state, console errors, network calls, and visual/customer-readiness evidence.
 
-For product/UI work. Separates prototype/spec exploration from production implementation, requires approval before build, and handles design changes after signoff.
+### artifact-promotion-and-downloads
 
-### dirty-worktree-discipline
+For agent-produced files, reports, screenshots, PDFs, logs, and generated assets. Covers safe roots, file caps, served URLs, markdown path bypass prevention, and attachment UX.
 
-For agents working in messy repos. Requires preflight dirty-state inventory, isolated staging, no drive-by cleanup, exact commit surfaces, and unrelated work preservation.
+### agent-platform-health
 
-### security-intake-before-import
+For operating agent gateways and control planes. Covers health endpoints, websocket truth, worker queues, stale state, reconnect loops, and authenticated smokes.
 
-For importing scripts, tools, MCP servers, skills, or repos. Requires pinning commits, static scans, install-surface audit, secret/network checks, and minimal import.
+### prompt-to-agent-brief
 
-### qa-to-brief
+For turning a user's rough idea into a precise dispatch prompt for a specialist agent, with role, scope, stop conditions, evidence, and output contract.
 
-For turning bug reports, screenshots, and user panic into durable engineering briefs with repro steps, expected behaviour, evidence, severity, owner, and acceptance tests.
+### live-research-to-decision
 
-### reviewer-fix-mode
-
-A stricter companion to orchestrated delivery. Focuses only on review-then-fix authority boundaries, documented findings, limited diffs, rerun evidence, and final judgement.
+For converting web/social/model research into a bounded decision without accepting launch hype, marketing copy, or single-source claims.
 
 ## Extraction criteria
 
