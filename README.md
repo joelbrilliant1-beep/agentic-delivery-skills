@@ -11,7 +11,7 @@ These skills capture practical operating patterns for:
 - keeping agent work visible;
 - validating model/provider claims before swapping production agents.
 
-They are designed to be portable across Claude Code, Codex, Hermes Agent, OpenClaw, Cursor-style agents, custom harnesses, and subagent systems.
+They are designed to be portable across coding agents, agent runtimes, IDE agents, custom harnesses, and subagent systems.
 
 ## Skills
 
